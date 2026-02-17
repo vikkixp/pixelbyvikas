@@ -1205,3 +1205,147 @@ img {
         font-size: 5rem;
     }
 }
+
+/* ========================================
+   Tools Section (New)
+======================================== */
+.tools-section {
+    padding: 6rem 0;
+    background-color: var(--dark-card);
+}
+
+.tools-grid-custom {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.tool-card {
+    background: var(--dark-bg);
+    border: 1px solid var(--dark-border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-glow);
+}
+
+.tool-emoji {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.tool-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.tool-level {
+    font-size: 0.75rem;
+    color: var(--secondary-color);
+    background: rgba(244, 114, 182, 0.15);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+}
+
+/* ========================================
+   Past Work Section (New)
+======================================== */
+.past-work {
+    padding: 6rem 0;
+    background-color: var(--dark-bg);
+}
+
+.past-work-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.drive-folder,
+.social-media-work {
+    background: var(--dark-card);
+    border: 1px solid var(--dark-border);
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.drive-folder:hover,
+.social-media-work:hover {
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-lg);
+}
+
+.drive-folder h3,
+.social-media-work h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.drive-folder h3 i {
+    color: #4285f4;
+}
+
+.social-media-work h3 i {
+    color: var(--primary-color);
+}
+
+.drive-folder p,
+.social-media-work p {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+
+.drive-folder .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.social-links-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.social-link-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    background: var(--dark-bg);
+    border-radius: 10px;
+    color: var(--text-dark);
+    font-weight: 500;
+    transition: var(--transition);
+    border: 1px solid var(--dark-border);
+}
+
+.social-link-item:hover {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+.social-link-item i {
+    font-size: 1.25rem;
+}
